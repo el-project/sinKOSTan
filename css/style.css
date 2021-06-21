@@ -9,9 +9,9 @@
 
 .sizeLogo {
     width: 101px;
-height: 101px;
-left: 76px;
-top: 610px;
+    height: 101px;
+    left: 76px;
+    top: 610px;
 } 
 
 .caption {
@@ -24,10 +24,10 @@ top: 610px;
     width: 200px ; 
     height: 400px;
     display: block;
-  margin-left: auto ;
-  margin-right: auto ;
-  width: 50%;
-    
+    margin-left: auto ;
+    margin-right: auto ;
+    width: 50%;
+        
 }
 
 @keyframes load{
@@ -60,7 +60,7 @@ top: 610px;
 }
 
 #marketplace .jumbotron {
-    background-image: url('../img/1crop.png');
+    background-image: url('../img/danny-howe-JQCcN6BGIvE-unsplash.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: 0 -300px;
@@ -108,6 +108,7 @@ a {
     color: black;
     text-decoration: none;
 }
+
 .medsos ul li {
     display: inline-block;
     color: #fff;
@@ -128,11 +129,6 @@ footer{
     margin-top: 100px;
 }
 
-.team {
-    max-width: 300px;
-}
-
-
 .carousel-caption {
     position: absolute;
     top: 100px;
@@ -148,6 +144,79 @@ footer{
         font-size: 50px;
         color: rgb(112, 110, 103);
 }
+.item {
+    transition: .2s ease-in-out;
+}
 
+.item:hover {
+    filter: brightness(80%);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.team {
+    max-width: 300px;
+    filter: grayscale(20);
+}
 
+.team:hover {
+    filter: none;
+    transform: scale(1.1);
+}
+@media screen and (max-width:768px){
+    .container {
+        width: 90%;
+    }
+    .container .raw .col .card{
+        text-align: center;
+        float: none; 
+    }
+    header h1{
+        text-align: center;
+        float: none;
+    }
+    header ul{
+        text-align: center;
+        float: none;
+    }
+    .row .col {
+        width: 100%;
 
+        margin-bottom: 20px;
+    }
+    .brandNavbar {
+        font-size: medium;
+        text-align: right;
+        position:relative;
+        float: none;
+    }
+    .box .col-3{
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .box .col-4{
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .box .col-5{
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .navbar {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .jumbotron{
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    h1 {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+}
